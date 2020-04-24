@@ -1,9 +1,10 @@
+import $ from 'jquery';
 import { ExchangeService } from './../src/for-ex.js';
 
 $(document).ready(function() {
-  event.preventDefault();
 
-  $("form#exchange").submit(function () {
+  $("form#exchange").submit(function (event) {
+    event.preventDefault();
     const amount = $("input#amount").val();
     const target = $("#target").val();
  
@@ -14,14 +15,13 @@ $(document).ready(function() {
     })();
 
 
-  function getElements(response) {
-    if (response) {
-    //   $("#return").text('$' + amount + 'USD is worth' + response.conversion_rates[target]);
-      $("inputAmount") = amount;
-      $("#targetAmount") = amount * response.conversion_rates[target];
-      $("#targetCurrency") = target;
-
+    function getElements(response) {
+      if (response) {
+        //   $("#return").text('$' + amount + 'USD is worth' + response.conversion_rates[target]);
+        $("inputAmount").text(amount);
+        $("#targetAmount").text(amount * response.conversion_rates[target]);
+        $("#targetCurrency").text(target);
+      }
     }
-  }
+  });
 });
-})
