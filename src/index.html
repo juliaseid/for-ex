@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Exchange Calculator</h2>
+      <h4>Find out how much your money is worth in places I've traveled:</h4>
+      <form id="exchange">
+        <label for="amount">Enter an amount in US dollars:</label>
+        <input id="amount" type="number">
+        <label for="target">Select a currency to convert to:</label>
+        <select class="form-control" id="target">
+          <option value="EUR">Euros</option>
+          <option value="CAD">Canadian Dollars</option>
+          <option value="GBP">Pounds Sterling</option>
+          <option value="CHF">Swiss Franc</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="DOP">Dominican Peso</option>
+          <option value="ECD">Eastern Caribbean Dollar</option>
+        </select>
+      </form>
+    <div id="return">
+      <p>$<span id="inputAmount"></span> is worth <span id="targetAmount"></span> <span id="targetCurrency"></span> today.</p>
+    </div>
+    </div>
+  </body>
+</html>
