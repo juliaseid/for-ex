@@ -25,6 +25,14 @@ _This program uses the ExchangeRate API to allow users to find out exchange rate
     * Input: "Calculate Exchange"
     * Output:  "$100USD is equal to xxx Euros as of (today's date)."
 
+* - The program will tell the user when they have selected an unsupported currency.
+    * Input: "Eastern Caribbean Dollars"
+    * Output: "Sorry, we don't support that currency."
+
+* - The program will notify the user if they have exceeded the rate for the API key.
+    * Input: 2001st request for exchange data in one month
+    * Output: "Please try back next month.  We've exceeded our data usage capacity for this month."
+
 
 ## Known Bugs
 -
