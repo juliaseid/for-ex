@@ -6,25 +6,31 @@
   </head>
   <body>
     <div class="container">
-      <h2>Currency Exchange Calculator</h2>
-      <h4>Find out how much your money is worth in places I've traveled:</h4>
-      <form id="exchange">
-        <label for="amount">Enter an amount in US dollars:</label>
-        <input id="amount" type="number">
-        <label for="target">Select a currency to convert to:</label>
-        <select class="form-control" id="target">
-          <option value="EUR">Euros</option>
-          <option value="CAD">Canadian Dollars</option>
-          <option value="GBP">Pounds Sterling</option>
-          <option value="CHF">Swiss Franc</option>
-          <option value="MXN">Mexican Peso</option>
-          <option value="DOP">Dominican Peso</option>
-          <option value="ECD">Eastern Caribbean Dollar</option>
-        </select>
-        <button id="getResult" form="exchange" type="submit" class="btn-btnprimary">Calculate Exchange</button>
-      </form>
-    <div id="return">
-
+      <h2>Julia's Currency Exchange Calculator</h2>
+      <div class = "well">
+        <h4>How much your money is worth in places I've traveled?</h4>
+        <form id="exchange">
+          <div class = "row">
+            <div class = "col-med-6">
+              <label for="amount">Enter an amount in US dollars:</label>
+              <input id="amount" type="number">
+            </div>
+            <div class = "col-med-6">
+              <label for="target">Select a currency to convert to:</label>
+              <select class="form-control" id="target" >
+                <option value="EUR">Euros</option>
+                <option value="CAD">Canadian Dollars</option>
+                <option value="GBP">Pounds Sterling</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="DOP">Dominican Peso</option>
+                <option value="ECD">Eastern Caribbean Dollar</option>
+              </select>
+            </div>
+          </div>
+          <button id="getResult" form="exchange" type="submit" class="btn-btnprimary">Calculate Exchange</button>
+        </form>
+      <div id="return"></div>
     </div>
     </div>
   </body>

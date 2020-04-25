@@ -38,6 +38,7 @@ $(document).ready(function() {
     event.preventDefault();
     const amount = $("input#amount").val();
     const target = $("#target").val();
+    $("#return").show();
  
     (async () => {
       let exchangeService = new ExchangeService();
